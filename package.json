@@ -1,0 +1,32 @@
+{
+  "name": "ajanuw-browser-platform",
+  "version": "0.1.0",
+  "description": "检测浏览器类型",
+  "private": false,
+  "main": "./dist/umd/browser-platform.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:umd": "webpack",
+    "build": "npm run build:umd && npm run build:esm"
+  },
+  "keywords": [
+    "browser-platform",
+    "Ajanuw"
+  ],
+  "author": "Ajanuw",
+  "license": "MIT",
+  "homepage": "https://github.com/januwA/browser-platform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/januwA/browser-platform.git"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {}
+}
